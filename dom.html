@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>Usando o DOM</h1>
+    <p>Veja isso</p>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript</p>
+    <p id="msg">Clique em mim</p>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[2]
+        
+        document.write('Está escrito:' + p1.innerText)//O innerText pega somente o texto, independente se houver formatação, ela não é mostrada
+
+        var p2 = document.getElementsByTagName('p')[2]
+        document.write('Sem o strong:' + p2.innerHTML)//O innerHTML pega o texto com formatação
+
+        alert(p1.innerText) //Posso escrever window.alert
+
+        var d = document.getElementById('msg')
+        document.write(d.innerHTML)
+    </script>
+</body>
+</html>

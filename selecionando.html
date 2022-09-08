@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos</title>
+</head>
+<body>
+    <h1>Árvore Dom</h1>
+    <p>Estou aprendendo sobre a árvore DOM</p>
+    <p>Podemos seleceionar por:</p>
+    <p>-Tags: getElementsByTagName()</p>
+    <p id="id">-ID: getElementById()</p>
+    <p name="nome">-Nome: getElementByName()</p>
+    <p class="classe">-Classe: getElementsByClassName()</p>
+    <p id="seletor">-Seletor: querySelector()/querySelectorAll()</p>
+
+    <!--Para imprimir uma tag atraves do Java, usa-se sempre o dom e o write, indicando a variavel e em
+     seguida o inner.HTML ou inner.Text
+    
+    É possivel alterar a cor atraves dos comando do JS
+    
+    -->
+    
+    <script>
+        let first = document.getElementsByTagName('p') [2] //Quando o element está no plural, é necessário informar qual a tag, nesse exemplo, é o [2]
+        
+        //O document.write mostra na tela as tags selecionadas
+        document.write(first.innerText)
+        let second = document.getElementById('id')
+        document.write(second.innerHTML)
+        second.style.backgroundColor = 'green'
+        second.style.color = 'white'
+        second.style.width = '300px'
+
+        let terceiro = document.getElementsByName('nome')[0]
+        document.write(terceiro.innerHTML)
+        terceiro.innerText= 'FICA TUDO JUNTO' //Quando eu altero o texto por Java, ele não altera a impressão do document.write, mas sim do html
+
+        let quarto = document.getElementsByClassName('classe')[0]
+        document.write(quarto.innerHTML)
+
+        //O querySelector é mais usado com id e class e a configuração no seletor é igual ao CSS. Ele geralmente é usado para fazer alterações rápidas  
+        let quinto = document.querySelector('p#seletor')
+        document.write(quinto.innerHTML)
+        quinto.style.backgroundColor= 'purple'
+        quinto.style.color = 'white'
+        quinto.style.width= '300px'
+
+    </script>
+</body>
+</html>
