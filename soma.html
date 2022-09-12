@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma e input</title>
+    <style>
+        .result{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transformando strings em números</h1>
+    <!--Para fazer a soma de dois números com o input, é necessário transformar os valores em números visto que, estão com formato de string-->
+    <p>Escreva dois números abaixo</p>
+    <input type="number" name="num1" id="num1"> +
+    <input type="number" name="num2" id="num2">
+    <button onclick="soma()"> Somar</button>
+    <div id="result">resultado</div>
+
+    <script>
+        let a = document.querySelector('#num1') 
+        let b = document.querySelector('#num2')
+        let c = document.querySelector('#result')
+        
+        function soma(){
+            let a1 = Number(a.value)
+            let b2 = Number(b.value)
+
+            //let resp = a1 + b2
+            c.innerHTML = a1 + b2
+        }
+        
+    /*Nesse caso, para retornar o valor da soma é necessário criar outro campo, no caso foi 
+    criado a div, então cria-se outra variavel para selecionar essa tag que será retornado o valor da soma.*/
+
+    
+    </script>
+</body>
+</html>
