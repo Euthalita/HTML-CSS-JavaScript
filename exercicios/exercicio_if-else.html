@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+   <div>
+       Qual a sua idade? <input type="number" value="Coloque sua idade" id="idade">
+       <button class="idade" onclick="idade()"> Enviar</button>
+       <div id="resp"></div>
+   </div>
+    
+   <script>
+        let old = document.querySelector('#idade')
+        let resp = document.querySelector('#resp')
+        
+        function idade(){
+            let old1 = Number(old.value)
+
+            if (old1 < 16){
+                resp.innerHTML += `<p>Voto <strong>REPROVADO!</strong></p>`
+            }else if (old1 < 18 || old1 > 65){  
+               resp.innerHTML += `<p>Voto opcional <strong>APROVADO!</stong></p>`
+            }else{
+                resp.innerHTML += `<p>Voto <strong>OBRIGATÓRIO</strong></p>`}
+            
+            resp.innerHTML += `O voto é opcional a partir de 16 anos e obrigatório a patir dos 18 anos`
+        }
+   </script>
+</body>
+</html>
