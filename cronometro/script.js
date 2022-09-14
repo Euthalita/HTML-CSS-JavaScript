@@ -42,8 +42,3 @@ function timer(){
     document.getElementById('watch').innerHTML = doisDigits(hora)+":"+ doisDigits(min)+":"+ doisDigits(sec)
 }
 
-function clicar(){
-    clica.style.backgroundcolor = 'green'
-
-
-}
