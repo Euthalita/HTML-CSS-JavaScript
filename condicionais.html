@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    <h1>Uso do if e else</h1>
+    <input type="number" id="vm">
+    <input type="button" value="Calcular" onclick="calcular()">
+    <div id="msg">Resposta</div>
+
+    <script>
+        let vm = document.querySelector('#vm')
+        let msg = document.querySelector('#msg')
+        
+        function calcular() {
+            let vm1 = Number(vm.value)//É necessário deixar o Number dentro da função
+            if (vm1 > 60) {
+                msg.innerHTML = `Sua velocidade ultrapassou o limite. MULTADO!`
+            }else{
+                msg.innerHTML = `Sua velocidade está dentro do limite.`
+                msg.innerHTML += `<p>Siga em frente e Boa viagem!</p>`
+            }
+        }
+       
+    </script>
+</body>
+</html>
