@@ -9,9 +9,13 @@
 <body>
     <h1>Event.preventDefault()</h1>
     <!--O preventDefault é uma função do JavaScript usada em formularios.
-        Essa função cancela o evento se for cancelável, sem parar a propagação do mesmo.  Por exemplo, nos formulários, é usado o botão com o evento "subimit" para enviar os dados para uma outra página, ou um servidor, etc.. Porém, quando clicado, a página atualiza, perdendo assim, os dados. O evento subimit já vem por padrão essa função
+        Essa função cancela o evento se for cancelável, sem parar a propagação do mesmo.  Por exemplo, nos formulários, 
+        é usado o botão com o evento "subimit" para enviar os dados para uma outra página, ou um servidor, etc.. 
+        Porém, quando clicado, a página atualiza, perdendo assim, os dados. O evento subimit já vem por padrão essa função
     Para que esse evento não ocorra, é necessário utilizar a função preventDefault(), que barra a execução desse evento
-    Outro exemplo, quando há um input inválido, como exemplo, uma senha inválida, para que seja barrado e não ocorra o reload da página para aparecer alguma msg de erro, usa-se o preventDefault, ou seja, a pagina não carrega, então os dados não são enviados e aparece a msg
+    Outro exemplo, quando há um input inválido, como exemplo, uma senha inválida, para que seja barrado e não ocorra o reload 
+    da página para aparecer alguma msg de erro, usa-se o preventDefault, ou seja, a pagina não carrega, então os dados não 
+    são enviados e aparece a msg
 
     Forma de usar:
     Cria-se uma função e entre os parenteses, coloca o parametro que receberá o preventDefault(), 
