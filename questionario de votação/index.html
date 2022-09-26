@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="corpo">
+    <h1>Faça o teste</h1>
+    <p>Preencha o formulário para saber se você está apto a votar</p>
+    <div id="pergunta">
+           Qual a sua idade? 
+           <input type="number" placeholder="Coloque sua idade" id="idade">
+           <button class="idade" onclick="idade(); mostrar()"> Enviar</button>
+    </div>
+    <div id="resp"></div>
+    </div>
+    
+
+   <div id="formulario">
+       <h2>Para mais informações:</h2>
+       <p>Para mais informações e ficar por dentro do que rola na política, preencha o formulário abaixo</p>
+       
+       
+    <form action="#">
+       <div>
+        <label for="nome">Nome</label>
+        <input type="name" id="nome" placeholder="Coloque seu nome">
+       </div>
+
+       <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Coloque seu email">
+        <button type="submit">Enviar</button>
+       </div>
+    </form>
+   </div>
+</body>
+</html>
