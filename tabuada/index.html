@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Número: <input type="number" id="number"></p>
+    <input type="button" value="Gerar tabuada" onclick="tabuada()">
+
+    <select name="tabu" id="tabuada" size="10"></select>
+
+    <script>
+        let numero = document.getElementById('number')
+        
+        function tabuada(){
+            let tab = document.getElementById('tabuada')
+            let num = Number(numero.value)
+            tab.innerHTML = ''
+            for(let i = 1; i <= 10; i ++){
+                let item = document.createElement('option')
+                item.text += `${num} x ${i} = ${num*i}`
+                tab.appendChild(item)
+            }
+        }
+
+    </script>
+</body>
+</html>
